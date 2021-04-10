@@ -1,0 +1,39 @@
+{% extends "OneApp_app/login_layout.html" %}
+{% block title %}
+login
+{% endblock %}
+{% block content %}
+
+    <div class = "login_title" > 
+        <h1> OneApp Login </h1>
+        <button class= "login_button"> Login </button>
+
+        <form action = "login.php" method = "post">
+                <table>
+                    <tr>
+                        <td>Username</td>
+                        <td>
+                            <input type="text" name="user">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Password:</td>
+                        <td>
+                            <input type="password" name="user_pw">
+                        </td>
+
+                        <td>
+                            Don't have a OneApp account?<a href="">Register Here</a>
+                        </td>
+                    </tr>
+
+                </table>
+
+        </form>
+        
+    
+    </div>
+
+
+{% endblock %}
